@@ -92,11 +92,22 @@ $(document).ready(function () {
           for (var i = 0; i < attributes.length; i++) {
             var attribute = attributes[i];
 
-            if (attribute.value.includes("Salami Gold")) {
-              guilds_joined.push("Salami's Guild");
-            }
+            const valuesToCheck = [
+              "Salami Gold",
+              "Salami Blue",
+              "Salami Cyborg",
+              "Salami Sibiu Red",
+              "Salami Sibiu Cyborg",
+              "Salami Sibiu Blue",
+              "Salami Red",
+              "Salami",
+              "Salami Sibiu Gold",
+              "Salami Sibiu",
+            ];
 
-            if (attribute.value.includes("Salami Sibiu Gold")) {
+            if (
+              valuesToCheck.some((value) => attribute.value.includes(value))
+            ) {
               guilds_joined.push("Salami's Guild");
             }
 
