@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
   for (var i = 1; i <= 32; i++) {
-    var imageUrl = "/img/pepeversx-nfts/" + i + ".png";
+    var imageUrl = "img/pepeversx-nfts/" + i + ".png";
     var swiperSlide = $(
       '<div class="swiper-slide"><img src="' + imageUrl + '"></div>'
     );
