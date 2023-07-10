@@ -92,7 +92,7 @@ $(document).ready(function () {
           for (var i = 0; i < attributes.length; i++) {
             var attribute = attributes[i];
 
-            const valuesToCheck = [
+            const salamiValues = [
               "Salami Gold",
               "Salami Blue",
               "Salami Cyborg",
@@ -103,15 +103,25 @@ $(document).ready(function () {
               "Salami",
               "Salami Sibiu Gold",
               "Salami Sibiu",
+              "Popcorn Blue",
+              "Popcorn Gold",
+              "Popcorn Red",
+              "Popcorn Cyborg",
+              "Popcorn",
             ];
 
-            if (
-              valuesToCheck.some((value) => attribute.value.includes(value))
-            ) {
+            if (salamiValues.some((value) => attribute.value.includes(value))) {
               guilds_joined.push("Salami's Guild");
             }
 
-            if (attribute.value.includes("Cap")) {
+            const capValues = [
+              "Elrond Cap",
+              "McDonalds Cap",
+              "MuliversX Cap",
+              "P4L Cap",
+            ];
+
+            if (capValues.some((value) => attribute.value.includes(value))) {
               guilds_joined.push("Caps Guild");
             }
 
