@@ -40,7 +40,6 @@ $(document).ready(function () {
     var id = $("#inputID").val();
     console.log(id);
     if (parseInt(id) > 6969) {
-      console.log(parseInt(id));
       $("#error-message").show();
       $("#looser-go-buy-pepe").hide();
       $("#result").hide();
@@ -85,7 +84,7 @@ $(document).ready(function () {
       success: function (response) {
         var attributes = response.results[0].metadata.attributes;
         var message = "";
-        console.log(response.results[0].metadata.attributes);
+        //console.log(response.results[0].metadata.attributes);
         if (!response.empty) {
           var guilds_joined = [];
 
