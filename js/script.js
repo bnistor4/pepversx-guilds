@@ -93,27 +93,27 @@ $(document).ready(function () {
             var attribute = attributes[i];
 
             if (attribute.value.includes("Salami Gold")) {
-              guilds_joined.push("Salami");
+              guilds_joined.push("Salami's Guild");
             }
 
             if (attribute.value.includes("Salami Sibiu Gold")) {
-              guilds_joined.push("Salami");
+              guilds_joined.push("Salami's Guild");
             }
 
             if (attribute.value.includes("Cap")) {
-              guilds_joined.push("Cap");
+              guilds_joined.push("Caps Guild");
             }
 
             if (attribute.value.includes("Brain")) {
-              guilds_joined.push("Brain");
+              guilds_joined.push("Mastermind Guild");
             }
 
             if (attribute.value.includes("Crown")) {
-              guilds_joined.push("Crown");
+              guilds_joined.push("Crown Guild");
             }
 
             if (attribute.value.includes("Broom")) {
-              guilds_joined.push("Broom");
+              guilds_joined.push("Sweeper's Guild");
             }
           }
 
